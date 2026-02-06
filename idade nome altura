@@ -1,0 +1,34 @@
+import java.util.Scanner; // 1. Importar a ferramenta
+
+public class Main
+{
+    public static void main(String[] args) {
+       
+        Scanner leitor = new Scanner(System.in);
+        
+        System.out.println("Digite seu nome:");
+        String nome = leitor.nextLine(); 
+        
+       
+        System.out.println("Digite sua idade:");
+        int idade = leitor.nextInt(); 
+        
+        System.out.println("Digite sua altura:");
+        double altura = leitor.nextDouble(); 
+        
+        System.out.println("Você é estudante? (digite true ou false):");
+        boolean estudante = leitor.nextBoolean();
+        
+        System.out.println("Digite seu gênero (M ou F):");
+        char genero = leitor.next().charAt(0); 
+        
+        System.out.println("\n--- DADOS CADASTRADOS ---");
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
+        System.out.println("Altura: " + altura);
+        System.out.println("Estudante: " + estudante);
+        System.out.println("Gênero: " + genero);
+        
+        leitor.close();
+    }
+}
